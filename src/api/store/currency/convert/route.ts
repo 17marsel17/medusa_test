@@ -1,6 +1,6 @@
 import type { MedusaRequest, MedusaResponse } from "@medusajs/framework/http";
 import { GetCurrencyConvertDto } from "./validators";
-import { CurrencyConverterService } from "../../../../../services/currency-converter";
+import { CurrencyConverterService } from "../../../../services/currency-converter";
 
 export const GET = async (req: MedusaRequest, res: MedusaResponse) => {
   const query = GetCurrencyConvertDto.parse(req.query);
